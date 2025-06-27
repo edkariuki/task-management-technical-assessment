@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+dist/
+
+# Env files
+.env
+
+# Logs
+logs
+*.log
+
+# Prettier
+.prettierignore
+
+# OS
+.DS_Store
+
+# TypeScript cache
+*.tsbuildinfo
