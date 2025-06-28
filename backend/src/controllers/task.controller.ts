@@ -1,4 +1,3 @@
-
 import { Response } from 'express';
 import pool from '../utils/db';
 import { AuthRequest } from '../middleware/auth.middleware';
@@ -25,7 +24,7 @@ export const createTask = async (req: AuthRequest, res: Response) => {
   res.status(201).json(result.rows[0]);
 };
 
-export const updateTask = async (req: AuthRequest, res: Response) : Promise<void> => {
+export const updateTask = async (req: AuthRequest, res: Response): Promise<void> => {
   const { id } = req.params;
   const { title, description, status, priority } = req.body;
 
